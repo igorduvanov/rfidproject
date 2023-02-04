@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2448da02-d98c-4852-8117-f374580c00bd" name="apache" url="http://localhost/rfidproject/">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\rfidproject" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
