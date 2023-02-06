@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>R-FidProject</title>
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <div class="wrapper">
-       <div class="bg">
-           <header class="header">
+    <div class="wrapper" >
+       <div class="bg" id="header">
+           <header class="header parallax">
                <div class="header__container">
                    <a href="" class="header__logo">
                        <img src="img/logo.png" alt="логотип">
@@ -21,12 +22,12 @@
                    <div class="header__menu">
                        <nav class="menu__body">
                            <ul class="menu__list">
-                               <li class="menu__item"><a href="#" class="menu__link">Main</a></li>
-                               <li class="menu__item"><a href="#" class="menu__link">How to use</a></li>
-                               <li class="menu__item"><a href="#" class="menu__link">User Data</a></li>
-                               <li class="menu__item"><a href="#" class="menu__link">Read Tag</a></li>
-                               <li class="menu__item"><a href="#" class="menu__link">Map location</a></li>
-                               <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+                               <li class="menu__item"><a href="#header" class="menu__link">Main</a></li>
+                               <li class="menu__item"><a href="#how-it-work" class="menu__link">How to use</a></li>
+                               <li class="menu__item"><a href="#read-tag" class="menu__link">User Data</a></li>
+                               <li class="menu__item"><a href="#read-tag" class="menu__link">Read Tag</a></li>
+                               <li class="menu__item"><a href="#map-location" class="menu__link">Map location</a></li>
+                               <li class="menu__item"><a href="#footer" class="menu__link">Contact us</a></li>
                            </ul>
                        </nav>
                    </div>
@@ -45,12 +46,12 @@
                    </label>
 
                    <ul class="hidden-menu">
-                       <li class="menu__item"><a href="#" class="menu__link">Main</a></li>
-                       <li class="menu__item"><a href="#" class="menu__link">How to use</a></li>
-                       <li class="menu__item"><a href="#" class="menu__link">User Data</a></li>
-                       <li class="menu__item"><a href="#" class="menu__link">Read Tag</a></li>
-                       <li class="menu__item"><a href="#" class="menu__link">Map location</a></li>
-                       <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+                       <li class="menu__item"><a href="#header" class="menu__link">Main</a></li>
+                       <li class="menu__item"><a href="#how-it-work" class="menu__link">How to use</a></li>
+                       <li class="menu__item"><a href="#read-tag" class="menu__link">User Data</a></li>
+                       <li class="menu__item"><a href="#read-tag" class="menu__link">Read Tag</a></li>
+                       <li class="menu__item"><a href="#map-location" class="menu__link">Map location</a></li>
+                       <li class="menu__item"><a href="#footer" class="menu__link">Contact us</a></li>
                        <div class="header__button ">
                            <a href="login.html" class="button__login ">Login</a>
                        </div>
@@ -74,16 +75,16 @@
                                        industry's standard dummy text ever since.</p>
                                </div>
                                <div class="try-now__block-text__button">
-                                   <div class=" ">
-                                       <a href="" class="block-text__button how-to-use__button btn white__btn  ">Try Now</a>
+                                   <div class="block-text__button__try-now">
+                                       <a href="login.html" class="block-text__button how-to-use__button btn white__btn  ">Try Now</a>
                                    </div>
-                                   <div class=" ">
-                                       <a href="" class="block-text__button how-to-use__button btn white__btn ">How to Use</a>
+                                   <div class="block-text__button__how-to-use">
+                                       <a href="#how-it-work" class="block-text__button how-to-use__button btn white__btn ">How to Use</a>
                                    </div>
                                </div>
                            </div>
                        </div>
-                       <a href="" class="try-now__view-more"><img src="img/view_more.png" alt=""></a>
+                       <a href="#how-it-work" class="try-now__view-more"><img src="img/view_more.png" alt=""></a>
                    </div>
                    <div class="try-now__content__svg-bg">
                        <div class="content__svg-bg head__first-line">
@@ -102,14 +103,18 @@
                            </svg>
                        </div>
                    </div>
-                   <div class="big--cube cube-style big"></div>
-                   <div class="medium--cube cube-style medium"></div>
-                   <div class="small--cube cube-style small"></div>
+
+                   <div class="back-layer">
+                       <div class="big--cube cube-style big "></div>
+                       <div class="medium--cube cube-style medium "></div>
+                       <div class="small--cube cube-style small "></div>
+                   </div>
+
                </section>
            </main>
            </header>
        </div>
-        <section class="how-it-work white__bg">
+        <section id="how-it-work" class="how-it-work white__bg">
             <div class="how-it-work__container">
                 <div class="how-it-work__content">
                     <div class="how-it-work__block-text">
@@ -120,22 +125,22 @@
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  the industry's standard dummy text ever since.
                         </p>
                         <div class="how-it-work__block-text__card">
-                            <div class="how-it-work__card__block card-style">
+                            <div class="how-it-work__card__block card-style" data-aos="fade-right"  data-aos-duration="1000"  data-aos-delay="120">
                                 <img src="img/card1.png" alt="">
                                 <h3 class="how-it-work__card__title">NodeMCU V3</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                             </div>
-                            <div class="how-it-work__card__block card-style">
+                            <div class="how-it-work__card__block card-style" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="120">
                                 <img src="img/card2.png" alt="">
                                 <h3 class="how-it-work__card__title">RFID RC522 +</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                             </div>
-                            <div class="how-it-work__card__block card-style">
+                            <div class="how-it-work__card__block card-style" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="120">
                                 <img src="img/card3.png" alt="">
                                 <h3 class="how-it-work__card__title">DISPLAY 1601</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                             </div>
-                            <div class="how-it-work__card__block card-style">
+                            <div class="how-it-work__card__block card-style" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="120">
                                 <img src="img/card4.png" alt="">
                                 <h3 class="how-it-work__card__title">TEMPERATURE SENSOR</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
@@ -149,7 +154,7 @@
             </div>
         </section>
 
-        <section class="read-tag white__bg">
+        <section id="read-tag" class="read-tag white__bg">
             <div class="read-tag__container">
                 <div class="read-tag__content">
                     <div class="read-tag__block-text">
@@ -160,7 +165,7 @@
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  the industry's standard dummy text ever since.
                         </p>
                         <div class="read-tag__block-text__card">
-                            <div class="read-tag__card__block-info card-style">
+                            <div class="read-tag__card__block-info card-style"  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="120">
                              <div class="block-info__content">
                                 <div class="block-info__content__user-info">
                                     <img src="img/user.png" alt="foto user">
@@ -210,7 +215,7 @@
                             </div>
 
 
-                            <div class="read-tag__card__block-status card-style">
+                            <div class="read-tag__card__block-status card-style"  data-aos="flip-right" data-aos-duration="1000" data-aos-delay="120">
                                 <div class="block-status__content">
                                     <div class="block-status__content__title">
                                         <p>Temperature</p>
@@ -248,26 +253,26 @@
 
         </section>
 
-        <section class="map-location white__bg">
+        <section id="map-location" class="map-location white__bg">
             <div class="map-location__container">
                 <div class="map-location__content">
                    <div class="map-location__block-text">
                        <h2 class="purple-text">Map location</h2>
                        <p class="map-location__block-text__subtitle pink-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  the industry's standard dummy text ever since.</p>
                    </div>
-                    <div class="map-location__google-map">
+                    <div class="map-location__google-map" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="120">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4030.9311579236173!2d26.199762085153715!3d49.072660449221935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47318487fa9d1dab%3A0xbaee896355ac8793!2z0LPRg9GA0YLQvtC20LjRgtC-0Lo!5e0!3m2!1suk!2sua!4v1675097101529!5m2!1suk!2sua" style="border:0;" ></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="footer white__bg ">
+        <footer id="footer" class="footer white__bg ">
             <div class="footer__container">
                 <div class="footer__content">
                    <div class="footer__content__info-top">
                        <div class="block__footer__logo">
-                           <a href="" class="header__logo">
+                           <a href="#header" class="header__logo">
                                <img src="img/logo.png" alt="логотип">
                                <p class="header__logo__text text-white">Rfid<br>Data Access</p>
                            </a>
@@ -316,9 +321,13 @@
         </footer>
 
     </div>
-    <a href="#" class="to-top">
+    <a href="#header" class="to-top">
         <i class="fas fa-chevron-up"></i>
     </a>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

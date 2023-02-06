@@ -7,3 +7,21 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 })
+
+/*parallax =====================*/
+const parallax = document.querySelector('.parallax');
+const back = document.querySelector('.back-layer');
+
+//sensitivity for layers
+const sBack = 315;
+
+parallax.addEventListener('mousemove', e=>{
+  const x = e.clientX;
+  const y = e.clientY;
+
+  back.style.transform = `
+  translate(
+  ${x / sBack}%,
+  ${y / sBack}%
+  )`;
+});

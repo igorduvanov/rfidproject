@@ -173,6 +173,11 @@ body{
     font-size: 25px;
     font-weight: 400;
 }
+.block-text__button__try-now, .block-text__button__how-to-use{
+    width: 201px;
+    box-sizing: border-box;
+    text-align: center;
+}
 .try-now__block-text__button{
     display: flex;
     padding-bottom: 140px;
@@ -189,9 +194,11 @@ body{
 .try-now__button:hover{
     transition: all 1s ease 0s;
 }
-.how-to-use__button{
+.how-to-use__button {
     display: inline-block;
-    padding: 11.3px 48px 13.2px 48px;
+    padding: 11.3px 45px 13.2px 46px;
+    box-sizing: border-box;
+    width: 100%;
 }
 .try-now__view-more{
     display: flex;
@@ -247,7 +254,7 @@ body{
 }
 .how-it-work__card__block p{
     padding: 0 19px 35px 19px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
 }
 .how-it-work__card__title{
@@ -596,7 +603,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     list-style: none;
     padding: 0 5px 187px 0;
     margin: 0;
@@ -856,7 +863,7 @@ body{
         display: none;
     }
     .try-now__block__img-mobile{
-        padding: 122px 0 76px 0;
+        padding: 55px 0 76px 0;
         text-align: center;
     }
     .try-now__block__img-mobile img{
@@ -979,6 +986,13 @@ body{
     .read-tag__block-text__card{
         padding: 0;
     }
+    .block-status__content {
+        padding: 26px 14px 28px 30px;
+    }
+    .usr-style {
+        width: 175px;
+        height: 151px;
+    }
 }
 @media screen and (max-width: 661px) {
     .button__login {
@@ -1006,9 +1020,9 @@ body{
         width: 94%;
     }
     /*read tag==============*/
-    .block-info__content__user-info img{
-        width: 66px;
-        height: 66px;
+    .block-info__content__user-info img {
+            width: 76px;
+            height: 76px;
     }
     .read-tag__card__title{
         font-size: 18px;
@@ -1020,10 +1034,10 @@ body{
         margin-top: 20px;
     }
     .user-data__table__item{
-        font-size: 10px;
+        font-size: 14px;
     }
     .user-data__table__info-item{
-        font-size: 12px;
+        font-size: 14px;
     }
     .details__button{
         font-size: 10px;
@@ -1050,7 +1064,7 @@ body{
         height: 113px;
     }
     .content__update-date__last-update{
-        font-size: 10px;
+        font-size: 12px;
     }
     .content__update-date__time{
         font-size: 12px;
@@ -1073,9 +1087,22 @@ body{
         font-size: 32px;
     }
     .try-now__block-text__text {
+        text-align: left;
         font-size: 18px;
+        width: 100%;
+    }
+    .try-now__block-text {
+        width: 95%;
+        text-align: center;
+    }
+    .block-text__button__try-now, .block-text__button__how-to-use{
+        margin: 0 auto;
     }
     /*read tag==============*/
+    .block-info__content__user-info img {
+        width: 66px;
+        height: 66px;
+    }
     .read-tag__card__block-info{
         border-radius: 35px;
     }
@@ -1115,6 +1142,12 @@ body{
     }
     .block-info__content__user-info img {
         padding-right: 5px;
+    }
+    .block-status__content__title p {
+        padding: 15px 0 15px 0;
+    }
+    .block-status__content__update-date {
+        padding: 16px 0 15px 0;
     }
     /*map*/
     .map-location__google-map iframe{
@@ -1363,5 +1396,18 @@ html {
 .to-top.active {
     bottom:32px;
     pointer-events: auto;
-    opacity:1;
+    opacity:70%;
+    color: #eee;
+}
+
+
+/*===============parallax */
+.back-layer{
+    transform: translate(0%, 3.42667%);
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
