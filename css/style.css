@@ -1402,7 +1402,7 @@ html {
 
 
 /*===============parallax */
-.back-layer{
+.back-layer__down,.back-layer__login__left, .back-layer__login__right, .back-layer__top, .back-layer__left{
     transform: translate(0%, 3.42667%);
     top: 0px;
     left: 0px;
