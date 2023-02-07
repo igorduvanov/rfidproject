@@ -19,7 +19,6 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 
 
 }
@@ -27,6 +26,7 @@ body{
     position: relative;
     z-index: 5;
     overflow: hidden;
+    height: 100vh;
 }
 .bg{
     background: linear-gradient(67.73deg, #8175B5 0%, #75C3E1 100%);
@@ -159,7 +159,18 @@ body{
     transform: rotate(-33.64deg);
 }
 /* section main */
-
+.main{
+    height: 65%;
+}
+.try-now{
+    height: 100%;
+}
+.try-now__container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .try-now__block-text{
     width: 55%;
 }
@@ -180,7 +191,7 @@ body{
 }
 .try-now__block-text__button{
     display: flex;
-    padding-bottom: 140px;
+    padding-bottom: 40px;
     gap: 30px;
 }
 .bloc-text__button{
@@ -206,7 +217,23 @@ body{
     width: 50px;
     height: 50px;
     margin: 0 auto;
-    padding-bottom: 76px;
+    margin-bottom: 76px;
+}
+.try-now__view-more{
+    border: solid 1px #fff;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+}
+.view-more__arrow{
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.6s ease 0s;
+    padding: 20px;
+}
+.view-more__arrow:hover{
+    transform: scale(1.2, 1.2) translate(0, 20px) ;
+    transition: all 0.6s ease 0s;
 }
 
 /* section how it work*/
@@ -246,6 +273,11 @@ body{
     text-align: center;
     border-radius: 35px;
     flex: 0 0 305px;
+    transition: all 1s ease 0s;
+}
+.how-it-work__card__block:hover{
+    transform: translate(0, -25px)!important;
+    transition: all 1s ease 0s;
 }
 .how-it-work__card__block img{
     padding-top: 24px;
@@ -686,6 +718,9 @@ body{
     [class*="__container"] {
         max-width: 75.5%;
     }
+    .header__container {
+        padding: 97px 0 70px 0;
+    }
     .try-now__block-text__title {
         font-size: 58px;
     }
@@ -702,8 +737,8 @@ body{
     }
     .how-it-work__card__block img {
         padding-top: 24px;
-        width: 47%;
-        height: 42%;
+        width: 100px;
+        height: 90px;
     }
     /*read tag*/
     .block-info__content{
@@ -725,12 +760,48 @@ body{
     }
 }
 @media screen and (max-width: 1440px){
-    .how-it-work__card__block{
-        flex: 0 0 225px;
-    }
     /*read tag*/
-    .read-tag__block-text__card{
-        flex-wrap: wrap;
+    .read-tag__block-text__card {
+        padding: 0;
+        gap: 30px;
+    }
+    .block-info__content, .block-status__content {
+        padding: 15px 14px 20px 18px;
+    }
+    .block-info__content__user-info img {
+        padding-top: 17px;
+        width: 115px;
+        height: 115px;
+        padding-right: 10px;
+    }
+    .read-tag__card__title {
+        font-size: 28px;
+    }
+   .read-tag__card__block-info, .read-tag__card__block-status{
+       height: 350px;
+   }
+    .block-info__user-data__table{
+        padding-top: 12px;
+    }
+    .usr-style {
+        width: 160px;
+        height: 151px;
+    }
+    .content__usr__temp_usr p, .content__usr__status-usr p {
+        font-size: 41px;
+    }
+    .block-status__content__title a {
+        margin: 0;
+    }
+    .block-status__content__usr {
+        padding: 0;
+        gap: 0;
+    }
+    .content__usr__status-usr{
+        margin: 0 auto;
+    }
+    .block-status__content__title{
+        justify-content: space-between;
     }
     .read-tag__card__block-info{
         margin: 0;
@@ -738,8 +809,17 @@ body{
         width: 70%;
     }
     .read-tag__card__block-status{
-        margin-top: 42px;
         width: 70%;
+    }
+}
+@media screen and (max-width: 1422px){
+    .user-data__table__info-item {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1347px){
+    .block-info__user-data__table table{
+        margin: 0;
     }
 }
 @media screen and (max-width: 1294px){
@@ -765,6 +845,11 @@ body{
     /*read gag*====================*/
 
 }
+@media screen and (max-width: 1226px){
+    .how-it-work__block-text__card .how-it-work__card__block:last-child{
+        display: none;
+    }
+}
 @media screen and (max-width: 1188px){
     .footer__content {
         padding: 63px 0 36px 0;
@@ -779,6 +864,17 @@ body{
         padding-top: 15px;
     }
     .info-develop__copyright-developer{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1161px){
+    .read-tag__block-text__card {
+        gap: 20px;
+    }
+    .read-tag__card__title {
+        font-size: 25px;
+    }
+    .read-tag__card__email {
         font-size: 15px;
     }
 }
@@ -810,8 +906,8 @@ body{
         font-size: 16px;
     }
     /*howitwork*/
-    .how-it-work__block-text__card .how-it-work__card__block:last-child{
-        display: none;
+    .how-it-work__card__block p {
+        font-size: 12px;
     }
     .how-it-work__card__block {
         flex: 0 0 245px;
@@ -855,6 +951,31 @@ body{
     }
 
 }
+@media screen and (max-width: 1020px){
+    .read-tag__card__block-status{
+        width: 380px;
+    }
+    .block-status__content__title p {
+        font-size: 21px;
+    }
+    .usr-style {
+        width: 125px;
+        height: 121px;
+    }
+    .content__usr__temp_usr p, .content__usr__status-usr p {
+        font-size: 32px;
+    }
+    .content__update-date__time {
+        font-size: 17px;
+    }
+    .content__update-date__last-update{
+        font-size: 15px;
+    }
+    .block-status__content__update-date {
+        padding: 21px 0 60px 0;
+    }
+}
+
 @media screen and (max-width: 960px){
     .menu-mobaile,.try-now__block__img-mobile{
         display: block;
@@ -894,9 +1015,6 @@ body{
         width: 92%;
         margin: auto;
     }
-    .how-it-work__block-text__card .how-it-work__card__block:last-child{
-        display: block;
-    }
     .how-it-work__block-text__card{
         flex-wrap: wrap;
     }
@@ -911,24 +1029,34 @@ body{
         height: 69.81px;
     }
     /*read tag==============*/
+    .read-tag__block-text__card{
+    flex-direction: column;
+    }
     .read-tag__card__block-info{
-        width: 90%;
+        width: 65%;
+        margin: 0 auto;
     }
     .read-tag__card__block-status{
-        width: 90%;
+        width: 65%;
+        margin: 0 auto;
     }
     /*map*/
     .map-location__google-map iframe{
         height: 450px;
     }
 }
+@media screen and (max-width: 854px){
+    .how-it-work__block-text__card .how-it-work__card__block:last-child{
+        display: block;
+    }
+}
 @media screen and (max-width: 770px){
     /*read tag==============*/
     .read-tag__card__block-info{
-        width: 100%;
+        width: 75%;
     }
     .read-tag__card__block-status{
-        width: 100%;
+        width: 75%;
     }
     /*map*/
     .map-location__google-map iframe {
@@ -964,6 +1092,9 @@ body{
 }
 @media screen and (max-width: 668px){
     /*read tag==============*/
+    .block-status__content__update-date{
+        padding-bottom: 18px;
+    }
     .block-info__content__user-info img{
         width: 100px;
         height: 100px;
@@ -977,21 +1108,18 @@ body{
     .block-info__user-data__table{
         margin-top: 20px;
     }
-    .user-data__table__item{
-        font-size: 13px;
-    }
-    .user-data__table__info-item{
-        font-size: 15px;
-    }
     .read-tag__block-text__card{
         padding: 0;
     }
     .block-status__content {
-        padding: 26px 14px 28px 30px;
+        padding: 20px 14px 28px 16px;
     }
     .usr-style {
         width: 175px;
         height: 151px;
+    }
+    .read-tag__card__block-info, .read-tag__card__block-status {
+        width: 95%;
     }
 }
 @media screen and (max-width: 661px) {
@@ -1020,6 +1148,16 @@ body{
         width: 94%;
     }
     /*read tag==============*/
+    .read-tag__card__block-info, .read-tag__card__block-status{
+        height: 100%;
+    }
+    .block-status__content__title p{
+        padding: 0;
+    }
+    .usr-style {
+        width: 123px;
+        height: 107px;
+    }
     .block-info__content__user-info img {
             width: 76px;
             height: 76px;
@@ -1099,6 +1237,9 @@ body{
         margin: 0 auto;
     }
     /*read tag==============*/
+    .read-tag__card__block-info, .read-tag__card__block-status{
+        width: 100%;
+    }
     .block-info__content__user-info img {
         width: 66px;
         height: 66px;
@@ -1262,8 +1403,8 @@ input[type="submit"]:hover{
 .bg__registration{
     height: 100vh;
 }
-.registration__container a{
-    padding: 121px 0 0 0;
+.registration__container a {
+    padding: 60px 0 0 0;
 }
 .registration__title{
     font-weight: 700;
@@ -1279,7 +1420,10 @@ input[type="submit"]:hover{
 /*adaptaion login.html*/
 @media screen and (max-width: 1556px){
     .bg__registration{
-        height: 100%;
+        /*height: 100%;*/
+    }
+    form .txt_field{
+        margin: 30px 0;
     }
 }
 @media screen and (max-width: 960px){
