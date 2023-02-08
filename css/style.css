@@ -1536,6 +1536,13 @@ html {
     transition: all .4s;
     z-index: 5;
 }
+.to-top__arrow{
+    transition: all 0.6s ease 0s;
+}
+.to-top__arrow:hover{
+    transform: translate(0, -15px) ;
+    transition: all 0.6s ease 0s;
+}
 
 .to-top.active {
     bottom:32px;
