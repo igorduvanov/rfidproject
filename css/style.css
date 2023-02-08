@@ -1538,6 +1538,7 @@ html {
 }
 .to-top__arrow{
     transition: all 0.6s ease 0s;
+    color: white;
 }
 .to-top__arrow:hover{
     transform: translate(0, -15px) ;
