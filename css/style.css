@@ -444,9 +444,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 .icons-style i{
     color: #4B4545;
+    padding: 5px;
+}
+.icons-style:hover{
+    background: #8175B5;
+    transition: all 0.3s ease;
+}
+.icons-style i:hover{
+    color: #fff;
+    transition: all 0.3s ease;
 }
 .icons-style i.fa{
     font-family:fontawesome !important;
